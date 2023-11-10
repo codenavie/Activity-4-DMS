@@ -150,3 +150,8 @@ VALUES
 
     ALTER TABLE invoices
     RENAME COLUMN paymentdate TO paymenttime; 
+
+    DELETE FROM appointments
+    WHERE animalid = (
+	SELECT animalid 
+	FROM animals WHERE name = 'Simba');
