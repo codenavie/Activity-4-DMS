@@ -121,3 +121,4 @@ VALUES
 (8, 8, '2023-04-18', 'Spaying/neutering'),
 (9, 9, '2023-05-02', 'Allergy treatment'),
 (10,10, '2023-05-20', 'Eye infection');
+
