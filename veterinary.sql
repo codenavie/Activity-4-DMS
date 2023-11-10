@@ -149,4 +149,4 @@ VALUES
     ADD COLUMN registereddate DATE;
 
     ALTER TABLE invoices
-    RENAME COLUMN paymentdate TO paymenttime;
+    RENAME COLUMN paymentdate TO paymenttime; 
