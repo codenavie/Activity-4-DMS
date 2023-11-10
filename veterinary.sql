@@ -156,6 +156,6 @@ VALUES
 	SELECT animalid 
 	FROM animals WHERE name = 'Simba');
 
-UPDATE doctors
-SET dlastname = 'Reyes-Gonzales'
-WHERE dfirstname = 'Dr. Sofia';
+    UPDATE doctors
+    SET dlastname = 'Reyes-Gonzales'
+    WHERE dfirstname = 'Dr. Sofia';
