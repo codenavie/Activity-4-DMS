@@ -109,19 +109,6 @@ VALUES
 (9, 'Max', 'Dog', 'Dachshund', '2020-07-14', 'Male', 'Black and Tan', 9),
 (10,'Cleo', 'Cat', 'Ragdoll', '2019-12-22', 'Female', 'Seal Point', 10);
 
-INSERT INTO appointments (appointid, animalid, appointdate, reason)
-VALUES
-(1, 1, '2023-01-05', 'Annual check-up'),
-(2, 2, '2023-01-10', 'Vaccination'),
-(3, 3, '2023-02-02', 'Injury assessment'),
-(4, 4, '2023-02-15', 'Dental cleaning'),
-(5, 5, '2023-03-05', 'Skin condition'),
-(6, 6, '2023-03-10', 'Check for fleas'),
-(7, 2, '2023-04-12', 'Vaccination'),
-(8, 8, '2023-04-18', 'Spaying/neutering'),
-(9, 9, '2023-05-02', 'Allergy treatment'),
-(10,10, '2023-05-20', 'Eye infection');
-
 INSERT INTO doctors(doctorid, dfirstname, dlastname, specialty, phone, email)
 VALUES
 (1, 'Dr.Maria', 'Santos', 'General Veterinarian', '987-654-3210', 'maria@example.com'),
@@ -131,16 +118,4 @@ VALUES
 (5, 'Dr.Luis', 'Torres', 'Surgery Specialist', '123-555-7777', 'luis@example.com'),
 (6, 'Dr.Carmen', 'Fernandez', 'Opthalmology Specialist', '333-222-1111', 'carmen@example.com');
 
--- feat/insert-10-rows-invoices
-INSERT INTO invoices(invoiceid, appointid, totalamount, paymentdate)
-VALUES
-(1, 1, 50.00, '09:30:00'),
-(2, 2, 75.00, '14:15:00'),
-(3, 3, 100.00, '11:00:00'),
-(4, 4, 200.00, '13:45:00'),
-(5, 5, 80.00, '10:30:00'),
-(6, 6, 30.00, '15:00:00'),
-(7, 7, 75.00, '09:15:00'),
-(8, 8, 150.00, '16:30:00'),
-(9, 9, 60.00, '14:45:00'),
-(10, 10, 40.00, '11:30:00');
+
