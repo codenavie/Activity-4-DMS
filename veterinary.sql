@@ -57,6 +57,7 @@ CREATE TABLE medicalrecords(
 	foreign key (doctorid) references doctors(doctorid)
 );
 
+
 INSERT INTO owners (ownerid, ofirstname, olastname, address, phone, email)
 VALUES
     (1, 'Juan', 'Dela Cruz', '123 Main St, Manila', '123-456-7890', 'juan@example.com'),
@@ -69,3 +70,15 @@ VALUES
     (8, 'Carmen', 'Fernandez', '222 Birch St, Taguig', '333-222-1111', 'carmen@example.com'),
     (9, 'Pedro', 'Santillian', '888 Spruce St, Bacolod', '888-777-3333', 'pedro@example.com'),
     (10, 'Sofia', 'Villianueva', '777 Walnut St, Iloilo', '111-999-3333', 'sofia@example.com');
+
+    CREATE TABLE medicalrecords(
+	recordid INT PRIMARY KEY,
+	recorddate TIMESTAMP,
+	diagnosis VARCHAR(1000) NOT NULL,
+	prescription VARCHAR(2000) NOT NULL,
+	notes VARCHAR(2000) NOT NULL,
+	animalid INT,
+	doctorid INT,
+	foreign key (animalid) references animals(animalid),
+	foreign key (doctorid) references doctors(doctorid)
+);
